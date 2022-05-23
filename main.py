@@ -39,7 +39,7 @@ def save():
       messagebox.showwarning(title="Not enough", message="Make sure you fill in everything! ")
     
     else:
-      is_ok = messagebox.askokcancel(title="Confirm", message= f"You entered: \n Website: {website} \n Email: {email} \n Password: {password} \n Is that all correct?") #type boolean
+      is_ok = messagebox.askokcancel(title="Confirm", message= f"You entered: \n\n Website: {website} \n\n Email: {email} \n\n Password: {password} \n Is that all correct?") #type boolean
       if is_ok: #Check errors
         try:
             with open("data.json","r") as data_file:  #r = reads file only
